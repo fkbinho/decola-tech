@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:sdw2023       # Banco H2 em memória, nome "sdw2023"
+    username: sdw2023             # Nome de usuário (você pode mudar)
+    password:                     # Senha (opcional, vazia aqui)
+
+  jpa:
+    show-sql: true                # Exibe as queries SQL no console
+    open-in-view: false
+    hibernate:
+      ddl-auto: create            # Cria as tabelas a partir das entidades toda vez que roda
+    properties:
+      hibernate:
+        format_sql: true          # Formata a saída das queries SQL
+
+  h2:
+    console:
+      enabled: true               # Ativa o console web do H2
+      path: /h2-console           # Caminho da URL para acessar (ex: http://localhost:8080/h2-console)
+    settings:
+      trace: false
+      web-allow-others: false     # Restringe acesso ao console para localhost
