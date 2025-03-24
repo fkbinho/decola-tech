@@ -16,7 +16,7 @@ public abstract class BaseItem {
 
     private String icon;
 
-    private BigDecimal description;
+    private String description;
 
     public Long getId() {
         return id;
@@ -34,11 +34,11 @@ public abstract class BaseItem {
         this.icon = icon;
     }
 
-    public BigDecimal getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    public void setDescription(BigDecimal description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 }
